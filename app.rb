@@ -13,5 +13,9 @@ get("/umbrella") do
 end
 
 get("/process_umbrella") do
+  @user_location=params.fetch("user_loc")
+
+  @latitutude = @
+
   erb(:umbrella_results)
 end
